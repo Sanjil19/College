@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marquee Tag Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        h2 {
+            color: #333;
+        }
+        marquee {
+            background-color: #eaeaea;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Example 1: Simple Scrolling Text</h2>
+    <marquee direction="left" scrollamount="4">
+        This is a basic example of text scrolling from left to right.
+    </marquee>
+
+    <h2>Example 2: Bouncing Message</h2>
+    <marquee behavior="alternate" scrollamount="6">
+        This text bounces from side to side.
+    </marquee>
+
+    <h2>Example 3: Nested Marquee Example</h2>
+    <marquee direction="left" scrollamount="3" style="width: 400px;">
+        Outer Marquee →
+        <marquee direction="up" scrollamount="2" style="height: 60px; display: inline-block;">
+            Inner marquee going up<br>
+            Line 2<br>
+            Line 3
+        </marquee>
+    </marquee>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Registration</legend>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <p>
+            <label for="firstname">Firstname:</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Firstname"
+            />
+            <label for="lastname">Lastname:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Lasdtname"
+            />
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" size="5" />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <label for="phone">Phone:</label>
+            <select id="phone_code" name="phone_code">
+              <option value="+977">+977</option>
+              <option value="+1">+1</option>
+              <option value="+44">+44</option>
+            </select>
+            <input type="text" id="phone" name="phone" />
+            <label for="address">Address:</label>
+            <select name="" id="">
+              <option value="KTM">KTM</option>
+              <option value="PKR">PKR</option>
+              <option value="Chitwan">Chitwan</option>
+            </select>
+          </p>
+          <p>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" checked />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" />
+            <label for="other">Other</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Credential</legend>
+          <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interest</legend>
+          <p>
+            <label>Hobby:</label>
+            <input type="checkbox" id="cricket" name="hobby" value="Cricket" />
+            <label for="cricket">cricket</label>
+            <input type="checkbox" id="music" name="hobby" value="Music" />
+            <label for="music">Music</label>
+            <input
+              type="checkbox"
+              id="football"
+              name="hobby"
+              value="Football"
+            />
+            <label for="football">Football</label>
+          </p>
+          <p>
+            <label>Faculty:</label>
+            <input type="radio" id="it" name="faculty" value="IT" />
+            <label for="it">IT</label>
+            <input type="radio" id="bca" name="faculty" value="BCA" />
+            <label for="bca">bca</label>
+            <input
+              type="radio"
+              id="engineering"
+              name="faculty"
+              value="Engineering"
+            />
+            <label for="engineering">engineering</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="college">College:</label>
+          <input type="text" id="college" name="college" value="NCIT" />
+        </p>
+        <p>
+          <label for="photo">Photo:</label>
+          <input type="file" id="photo" name="photo" />
+        </p>
+
+        <p>
+          <label for="document">Document:</label>
+          <input type="file" id="document" name="document" />
+        </p>
+
+        <p>
+          <label for="message">Message:</label>
+          
+          <textarea
+            id="message"
+            name="message"
+            rows="15"
+            cols="20"
+            placeholder="Type your message here"
+          ></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button">ok</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!-- 
+    Lab 6: CSS (Refer slide)
+Title: Introduction to CSS, Types of CSS and All kinds of Selectors present in CSS.
+Different kinds of styles with their properties.
+Objective: write yourself
+Questions
+1. Write an HTML &amp; CSS code to demonstrate the usage of inline, Internal &amp;
+External CSS.
+2. Write a program to Use different font, styles: In the style definition you
+define how each selector should work (font, color etc.). Then in the body
+of your pages, you refer to these selectors to activate the styles. (All
+selector must be done)
+3. To create a web page that displays college information using various Style
+sheets.(You can use your idea)
+4. Create Hover.html in which include text “I live in Nepal” 6 times. Now add
+CSS pseudo class on them(link, visited, hover, activate).
+Link must be in red color, when I visited them, they must be on blue color
+and when I hover on them
+a) Color changes to yellow
+b) Font size changes to 150%
+c) Background color changes to black
+d) Font family changes to monospace
+e) Text decoration hidden
+f) Text decoration Wavy
+5. Use all pseudo-elements on your HTML code.
+6. Use all kinds of Background and border properties on your HTML document.
+7. Use all kinds of Text properties of CSS on your HTML document.
+8. Use all kinds of List Properties of CSS on your HTML document.
+9. Use all kinds of Positioning and Layout properties.
+10. Make a striped table with a hoverable effect.
+11. Show all kinds of cursor properties
+12. Show all kinds of image filter properties
+13. Show examples of CSS box model -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .internal {
+        color: green;
+      }
+      #first {
+        color: yellow;
+      }
+      #second {
+        font-size: 150px;
+      }
+      #third {
+        background-color: black;
+        color: white;
+      }
+      #fourth {
+        font-family: monospace;
+      }
+      #fifth {
+        text-decoration: hidden;
+      }
+      #sixth {
+        text-decoration: wavy;
+      }
+      #cursor1:hover {
+        cursor: grab;
+      }#cursor2:hover {
+        cursor: crosshair;
+      }#cursor3:hover {
+        cursor: pointer;
+      }#cursor4:hover {
+        cursor: progress;
+      }#cursor5:hover {
+        cursor: wait;
+      }
+#cssmodel{
+  border: 1px black;
+  
+}
+    </style>
+  </head>
+  <body>
+    <h1>Lab 6</h1>
+    <hr />
+
+    <h2>1.</h2>
+    <p style="color: red">This is inline css</p>
+    <p class="internal">This is internal css</p>
+    <p class="external">This is external css</p>
+    <hr />
+
+    <h2>2.</h2>
+    <p style="color: teal; font-family: Arial, sans-serif">
+      This is inline CSS (font and color).
+    </p>
+    <p class="internal">This is internal CSS (class selector).</p>
+    <p class="external">This is external CSS (class selector).</p>
+    <p id="id">This is an ID selector.</p>
+    <h3>This is an element selector.</h3>
+    <hr />
+
+    <h2>4.</h2>
+    <p id="first">I live in Nepal.</p>
+    <p id="second">I live in Nepal.</p>
+    <p id="third">I live in Nepal.</p>
+    <p id="fourth">I live in Nepal.</p>
+    <p id="fifth">I live in Nepal.</p>
+    <p id="sixth">I live in Nepal.</p>
+
+    <h2>Cursor properties</h2>
+
+    <p id="cursor1"> cursor grab</p>
+    <p id="cursor2"> cursor grab</p>
+    <p id="cursor3"> cursor grab</p>
+    <p id="cursor4"> cursor grab</p>
+    <p id="cursor5"> cursor grab</p>
+
+
+    <h3>CSS box model</h3>
+
+    <p id="cssmodel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, aperiam!</p>
+  </body>
+</html>

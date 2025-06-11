@@ -1,0 +1,81 @@
+<!-- website layout -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .body {
+        display: flex;
+      }
+      .left,
+      .right {
+        padding: 100px;
+        width: 25%;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+      }
+      .middle {
+        padding: 100px;
+        width: 50%;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+      }
+      .head {
+        background-image: linear-gradient(to right, navy, black, crimson);
+        color: aliceblue;
+        text-align: center;
+        padding: 50px;
+      }
+      .foot {
+        background-image: linear-gradient(to right, navy, black, crimson);
+        color: aliceblue;
+        text-align: center;
+        padding: 30px;
+      }
+      nav {
+        background-color: black;
+
+        padding: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+      }
+      input {
+        float: right;
+      }
+      a:hover{
+        color: red;
+        animation: backwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">Head</div>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Gallery</a>
+      <a href="">Contact</a>
+      <a href="">News</a>
+      <input type="text" name="" id="" placeholder="Search" />
+    </nav>
+    <div class="body">
+      <div class="left">Left</div>
+      <div class="middle">Middle</div>
+      <div class="right">Right</div>
+    </div>
+    <div class="foot">&copy; Pokhara University</div>
+  </body>
+</html>

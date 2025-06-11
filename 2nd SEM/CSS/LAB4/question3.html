@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      body {
+        background-image: url(images/download.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      table,
+      td,
+      tr,
+      th {
+        border: 1px solid;
+        text-align: center;
+      }
+      td,
+      tr,
+      th {
+        padding: 30px;
+        width: 100px;
+        opacity: 90%;
+      }
+      .weekdays {
+        background-color: gray;
+      }
+      .break {
+        background-color: red;
+      }
+      .java {
+        background-color: rgb(99, 251, 152);
+      }
+      .dsa {
+        background-color: rgb(157, 216, 9);
+      }
+      .sad {
+        background-color: rgb(242, 0, 255);
+      }
+      .prob {
+        background-color: rgb(67, 180, 245);
+      }
+      .wt {
+        background-color: aqua;
+      }
+      .time {
+        background-color: darksalmon;
+      }
+      .top {
+        text-align: center;
+        position: top;
+      }
+      .text {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1000px;
+        padding: 0 20px;
+        margin: 10px auto;
+        gap: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <a href="#"><h4>NCIT</h4></a>
+      <h4>DEPARTMENT OF IT</h4>
+      <h4>EFFECTIVE FROM: 01-07-2022</h4>
+      <div class="text">
+        <span id="sem">Semester 3</span>
+        <span id="sir">Class mentor: Er. Simanta</span>
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <td bgcolor="yellow">Days/Periods</td>
+        <td class="time">
+          1 <br />
+          06:30-7:30
+        </td>
+        <td class="time">
+          2 <br />
+          07:30-8:30
+        </td>
+        <td class="time">
+          3 <br />
+          08:30-9:00
+        </td>
+        <td class="time">
+          4 <br />
+          09:00-10:00
+        </td>
+        <td class="time">
+          5 <br />
+          10:00-11:00
+        </td>
+        <td class="time">
+          6 <br />
+          11:00-12:00
+        </td>
+      </tr>
+
+      <tr>
+        <td class="weekdays">Sunday</td>
+        <td class="wt">WT</td>
+        <td class="dsa">DSA</td>
+        <td class="break">Break</td>
+        <td class="java">Java</td>
+        <td class="prob">Probability</td>
+        <td class="sad">SAD</td>
+      </tr>
+      <tr>
+        <td class="weekdays">Monday</td>
+        <td colspan="2" class="wt">WT</td>
+        <td class="break">Break</td>
+        <td colspan="2" class="java">Java</td>
+        <td class="sad">SAD</td>
+      </tr>
+      <tr>
+        <td class="weekdays">Tuesday</td>
+        <td colspan="2" class="dsa">DSA</td>
+        <td class="break">Break</td>
+        <td colspan="2" class="prob">Probability</td>
+        <td class="sad">SAD</td>
+      </tr>
+      <tr>
+        <td class="weekdays">Wednesday</td>
+        <td colspan="2" class="sad">SAD</td>
+        <td class="break">Break</td>
+        <td colspan="3" class="java">Java/Web tech lab</td>
+      </tr>
+      <tr>
+        <td class="weekdays">Thursday</td>
+        <td colspan="2" class="time">Extra Cirriculum</td>
+        <td class="break">Break</td>
+        <td colspan="3" class="dsa">DSA/Probability lab</td>
+      </tr>
+      <tr>
+        <td class="weekdays">Friday</td>
+        <td class="wt">WT</td>
+        <td class="dsa">DSA</td>
+        <td class="break">Break</td>
+        <td class="java">Java</td>
+        <td class="prob">Probability</td>
+        <td class="sad">SAD</td>
+      </tr>
+    </table>
+  </body>
+</html>
+

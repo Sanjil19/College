@@ -1,0 +1,40 @@
+::first-letter{
+    color: chocolate;
+
+}
+
+::first-line{
+    color: yellowgreen;
+}
+
+::selection{
+    background-color: chartreuse;
+    color: cornflowerblue;
+}
+
+/* ::marker{
+    color: firebrick;
+} */
+
+p::before{
+
+    /* content: "Sanjil"; 
+     content: url(); */
+
+    content: "😂";
+    color: blue;
+}
+
+p::after{
+    content: "😂";
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    
+    
+    content: "🗼";
+}

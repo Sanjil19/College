@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .admission {
+        background-color: #ffe4e1;
+        opacity: 0.85;
+        margin: 20vh 140px;
+        padding: 20px;
+        width: 500px;
+      }
+      .admission h1 {
+        text-align: center;
+      }
+      .admission table {
+        width: 100%;
+      }
+      .admission td {
+        padding: 5px;
+        vertical-align: top;
+      }
+      .admission input,
+      .admission textarea {
+        width: 100%;
+      }
+      .admission input[type="radio"],
+      .admission input[type="checkbox"] {
+        width: auto;
+      }
+      .admission textarea {
+        resize: vertical;
+        height: 60px;
+      }
+      .button-row {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .button2 {
+        margin: 0 5px;
+      }
+      .name-inputs,
+      .date-inputs,
+      .phone-input {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .name-inputs {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .name-inputs input {
+        width: 50%;
+      }
+
+      .date-inputs input {
+        width: 19%;
+      }
+      .phone-input #country-code {
+        width: 27px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admission">
+      <h1>Student Registration Form</h1>
+      <form>
+        <table>
+          <tr>
+            <td><label for="roll">Roll no. :</label></td>
+            <td><input type="text" name="roll" id="roll" /></td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap; vertical-align: middle">
+              <label for="firstname">Student Name:</label>
+            </td>
+            <td>
+              <div class="name-inputs">
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="First Name"
+                />
+                <span>-</span>
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="father">Father's name:</label></td>
+            <td><input type="text" name="father" id="father" /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td>
+              <div class="date-inputs">
+                <input type="number" name="day" id="day" placeholder="Day" />
+                <span>-</span>
+                <input type="number" name="month" id="month" placeholder="Month" />
+                <span>-</span>
+                <input type="number" name="year" id="year" placeholder="Year" />
+                <span>(DD-MM-YY)</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="contact">Mobile No.:</label></td>
+            <td>
+              <div class="phone-input">
+                <input type="text" name="country-code" id="country-code" value="+91"/>
+                <span>-</span>
+                <input type="tel" name="number" id="number" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email id:</label></td>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input type="password" name="password" id="password" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Department:</label></td>
+            <td>
+              <input type="checkbox" name="hobbies" id="CSE" value="CSE" />
+              <label for="CSE">CSE</label>
+              <input type="checkbox" name="hobbies" id="it" value="it" />
+              <label for="it">IT</label>
+              <input type="checkbox" name="hobbies" id="ECE" value="ECE" />
+              <label for="ECE">ECE</label>
+
+              <input type="checkbox" name="hobbies" id="Civil" value="Civil" />
+              <label for="Civil">Civil</label>
+              <input type="checkbox" name="hobbies" id="Mech" value="Mech" />
+              <label for="Mech">Mech</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="nationality">Course:</label></td>
+            <td>
+              <select name="nationality" id="nationality" >
+                <option value="select">
+                  ------------------Select Current Courses--------------
+                </option>
+                <option value="MCA">MCA</option>
+                <option value="WT">WT</option>
+                <option value="OOP">OOP</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="photo">Student Photo:</label></td>
+            <td><input type="file" name="photo" id="photo" /></td>
+          </tr>
+          <tr>
+            <td><label for="City">City:</label></td>
+            <td><input type="text" name="City" id="City" /></td>
+          </tr>
+          <tr>
+            <td><label for="Address">Address:</label></td>
+            <td><textarea name="Address" id="Address"></textarea></td>
+          </tr>
+            <td colspan="2" align="center">
+              <button class="button2" type="submit">Register</button>
+              
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

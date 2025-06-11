@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex: 1 1 0;
+            transition: flex 0.3s ease-in-out;
+            border-radius: 50px;
+        }
+        .images{
+            display: flex;
+            aspect-ratio: 3/2;
+            gap: 5px;
+        }
+
+        .image:hover{
+              flex: 2;
+        }
+        .image1 {
+           background-image: url("images/person.jpeg");
+        }
+        .image2{
+            background-image: url("images/boy.jpeg");
+        }
+        .image3{
+                background-image: url("images/ai.jpeg");
+        }
+        .image4{
+            background-image: url("images/image4.webp");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="images">
+        <div class="image image1">personn</div>
+        <div class="image image2">human</div>
+        <div class="image image3">AI</div>
+        <div class="image image4">nature</div>
+
+    </div>
+</body>
+
+</html>

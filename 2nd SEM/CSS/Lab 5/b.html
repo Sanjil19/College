@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        max-width: 400px;
+        
+      }
+      .top{
+        background-color: #cdccfe;
+      }
+      th {
+        height: 100%;
+      }
+      input[type="text"] {
+        width: 400px;
+       
+      }
+      #one {
+        height: 70px;
+      }
+      #two{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th class="top">Name</th>
+        <th class="top">Value</th>
+      </tr>
+      <tr>
+        <td>Sex</td>
+        <td>
+          <input type="radio" name="gender" value="male" />Male
+          <br />
+          <input type="radio" name="gender" value="female" />Female
+        </td>
+      </tr>
+
+      <tr>
+        <td>Eye Color</td>
+        <td>
+          <select name="eye_color" id="eye_color">
+            <option value="green">Green</option>
+            <option value="brown">Brown</option>
+            <option value="blue">Blue</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Check all that apply:</td>
+        <td>
+          <input type="checkbox" />Over 6 feet tall
+          <br />
+          <input type="checkbox" />Over 200 pounds
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Describe your athletic ability:</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="text" id="one" />
+        </td>
+      </tr>
+      <tr id="two">
+        <td colspan="2">
+          <button>Enter my information</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

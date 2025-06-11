@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-image: url(images/ncit.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      .login {
+        background-color: rgb(2, 255, 166);
+        opacity: 0.85;
+        float: left;
+        margin: 50vh 40px 50px 60px;
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+      }
+      .admission {
+        background-color: rgb(2, 255, 204);
+        opacity: 0.85;
+        float: right;
+        margin: 20vh 60px;
+        padding: 20px;
+        width: 500px;
+      }
+      .admission h1 {
+        text-align: center;
+      }
+      .admission table {
+        width: 100%;
+      }
+      .admission td {
+        padding: 5px;
+        vertical-align: top;
+      }
+      .admission input,
+      .admission textarea {
+        width: 100%;
+      }
+      .admission input[type="radio"],
+      .admission input[type="checkbox"] {
+        width: auto;
+      }
+      .admission textarea {
+        resize: vertical;
+        height: 40px;
+      }
+      .button-row {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .button2 {
+        margin: 0 5px;
+      }
+      #login-username,
+      #login-password {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <form>
+          <h1>Login</h1>
+          <br />
+          <label for="login-username">Username:</label>
+          <input type="text" id="login-username" placeholder="Sanjil" />
+          <br /><br />
+          <label for="login-password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Eg: 2rn2r89n2f2"
+          />
+          <br />
+          <br />
+          <a href="#">Forgot Password?</a>
+        </form>
+      </div>
+
+      <div class="admission">
+        <h1>Admission Form</h1>
+        <form>
+          <table>
+            <tr>
+              <td><label for="firstname">First Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  value="Sanjil"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="lastname">Last Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  value="Dahal"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" name="email" id="email" /></td>
+            </tr>
+            <tr>
+              <td><label for="password2">Password:</label></td>
+              <td>
+                <input
+                  type="password"
+                  name="password2"
+                  id="password2"
+                  placeholder="Eg: 2rn2r89n2f2"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dob">DOB:</label></td>
+              <td><input type="date" name="dob" id="dob" /></td>
+            </tr>
+            <tr>
+              <td><label for="contact">Contact No.:</label></td>
+              <td>
+                <input
+                  style="pointer-events: none; user-select: none"
+                  type="number"
+                  name="contact"
+                  id="contact"
+                  placeholder="Eg: 977-287491873"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="state">State:</label></td>
+              <td>
+                <input type="text" disabled />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="photo">Photo:</label></td>
+              <td>
+                <input type="file" name="photo" id="photo" accept="image/*" />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Gender:</label></td>
+              <td>
+                <input type="radio" name="gender" id="male" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="female">Female</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Faculty:</label></td>
+              <td>
+                <input type="radio" name="faculty" id="bca" value="BCA" />
+                <label for="bca">BCA</label>
+                <input type="radio" name="faculty" id="bbs" value="BBS" />
+                <label for="bbs">BBS</label>
+                <input type="radio" name="faculty" id="plus2" value="+2" />
+                <label for="plus2">+2</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Hobbies:</label></td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  id="music"
+                  value="Music"
+                />
+                <label for="music">Music</label>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  id="travel"
+                  value="Travel"
+                />
+                <label for="travel">Travel</label>
+                <input
+                  type="checkbox"
+                  name="hobbies"
+                  id="reading"
+                  value="Reading Books"
+                />
+                <label for="reading">Reading Books</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="nationality">Nationality:</label></td>
+              <td>
+                <select name="nationality" id="">
+                  <option value="">Nepali</option>
+                  <option value="">Indian</option>
+                  <option value="">American</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="message">Message:</label></td>
+              <td><textarea name="message" id="message"></textarea></td>
+            </tr>
+            <tr>
+              <td><label>Terms and Conditions:</label></td>
+              <td>
+                <input type="radio" name="tnc" id="agree" value="agree" />
+                <label for="agree">I agree</label>
+                <input type="radio" name="tnc" id="disagree" value="disagree" />
+                <label for="disagree">I disagree</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="button-row">
+                <button class="button2" type="submit">Sign Up</button>
+                <button class="button2" type="reset">Clear</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div + p {
+        font-size: 40px;
+      }
+      div > p {
+        background-color: red;
+      }
+      div ~ p {
+        font-weight: 900;
+      }
+
+      /* pseudoclass */
+      a:visited {
+        color: cadetblue;
+      }
+      :link {
+        color: orange;
+      }
+
+      #hover:hover {
+        color: blueviolet;
+        cursor: pointer;
+      }
+      img {
+        display: none;
+        
+      }
+
+      :focus
+      {
+        color: blue;
+      }
+
+      :invalid{
+        background-color: red;
+      }
+
+     :checked{
+        height: 100px;
+     }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>p1</p>
+      <p>p2</p>
+      <div>
+        <p>p3</p>
+      </div>
+      <div>
+        <p>p4</p>
+      </div>
+      <p>p5</p>
+      <div>
+        <span>
+          <p>p6</p>
+        </span>
+      </div>
+      <p>p7</p>
+      <div>
+        <div>
+          <div>
+            <p>p8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>p9</p>
+    <p>p10</p>
+
+    <h1>pseudo-class</h1>
+
+    <a href="#bb">This is :link </a>
+
+    <h1 id="hover">This is hover</h1>
+
+    <img src="image.webp" alt="" />
+
+    <input type="number" name="" id="" min="10" max="30">
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :not(p){
+color: red;
+        }
+        /* p:nth-child(2n){
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <!--   p{paragraph-$}*10   -->
+        <p>paragraph-1</p>
+        <p>paragraph-2</p>
+        <p>paragraph-3</p>
+        <p>paragraph-4</p>
+        <p>paragraph-5</p>
+        <p>paragraph-6</p>
+        <p>paragraph-7</p>
+        <p>paragraph-8</p>
+        <p>paragraph-9</p>
+        <p>paragraph-10</p>
+
+        <h1>
+            hi
+        </h1>
+    </div>
+    <h1></h1>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        background-color: aliceblue;
+        box-shadow: 10px 10px 5px #aaaaaa;
+        margin: 50px;
+      }
+      .left {
+        float: left;
+        background-image: linear-gradient(to right, navy, black, crimson);
+        height: 100vh;
+        width: 40%;
+        border-radius: 0px 50px 50px 0px;
+        padding: 20px;
+        color: white;
+      }
+      .right {
+        width: 60%;
+        margin: 20px;
+      }
+      .first {
+        display: flex;
+        gap: 40px;
+      }
+      .second {
+        display: flex;
+        gap: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <img src="images/boy.jpeg" alt="" />
+        <h1 id="name">Er.Sanjil Dahal</h1>
+        <p id="post">Student</p>
+        <p id="work">NCIT College</p>
+      </div>
+
+      <div class="right">
+        <h1>Information</h1>
+        <hr />
+
+        <div class="first">
+          <div class="email">
+            <h3>Email</h3>
+            <p>sanjeel1987@gmail.com</p>
+          </div>
+          <div class="phone">
+            <h3>phone</h3>
+            <p>3489578937</p>
+          </div>
+        </div>
+        <h1>Subject</h1>
+        <hr />
+        <div class="second">
+          <div class="recent">
+            <h3>Recent</h3>
+            <p>Web Technology</p>
+          </div>
+
+          <div class="mostview">
+            <h3>Most View</h3>
+            <p>abcd.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
