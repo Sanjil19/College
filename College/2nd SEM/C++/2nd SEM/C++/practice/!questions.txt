@@ -1,0 +1,7 @@
+1. s1 = s2
+2. s3 = s1 + s2
+3. virtual destructors
+4. virtual function
+5. constructor in derived class
+6. r = p, p = r
+7. constructor operator
